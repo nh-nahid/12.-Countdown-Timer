@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url(https://images.pexels.com/photos/414144/pexels-photo-414144.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  overflow: hidden;
+}
+
+.count-down-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 200px;
+}
+.times{
+ display: flex;
+ text-align: center;
+}
+.days{
+  width: 170px;
+}
+.hours{
+  width: 170px;
+}
+.minutes{
+  width: 170px;
+}
+.seconds{
+  width: 170px;
+}
+small{
+  font-size: 20px;
+  font-weight: 300;
+}
+p{
+  font-size: 40px;
+  font-weight: 300;
+}
+
+h1{
+  font-size: 80px;
+  margin: 0 30px;
+  font-weight: 400;
+}
+
+@media (max-width: 740px) {
+  h1{
+    font-size: 30px;
+  }
+  p{
+    font-size: 20px;
+  }
+  small{
+    font-size: 10px;
+  }
+  
+.days{
+  width: 100px;
+}
+.hours{
+  width: 100px;
+}
+.minutes{
+  width: 100px;
+}
+.seconds{
+  width: 100px;
+}
+}
