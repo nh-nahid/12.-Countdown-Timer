@@ -5,11 +5,8 @@ const hours = document.querySelector("#hours")
 const minutes = document.querySelector("#minutes")
 const seconds = document.querySelector("#seconds")
 
-const currentYear = new Date().getFullYear();
-const currentMonth = new Date().getMonth();
-const currentDate = new Date().getDate();
-const targetTime = new Date(`${currentMonth + 2} ${currentDate + 1 } ${currentYear} 00:00:00`);
-// const targetTime = new Date(`January 1 ${currentYear + 1} 00:00:00`);
+
+const targetTime = new Date().getTime() + (9 * 24 * 60 * 60 * 1000);
 
 // Update Countdown time
 
@@ -29,3 +26,10 @@ function updateCountdown(){
 }
 
 setInterval(updateCountdown, 1000);
+
+
+// const currentYear = new Date().getFullYear();
+// const currentMonth = new Date().getMonth();
+// const currentDate = new Date().getDate();
+// const targetTime = new Date(`${currentMonth + 2} ${currentDate + 1 } ${currentYear} 00:00:00`);
+// const targetTime = new Date(`January 1 ${currentYear + 1} 00:00:00`);
